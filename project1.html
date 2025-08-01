@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Financial Dashboard</title>
+    <style>
+        /* Reset Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #f8f8f8;
+            height: 100vh;
+        }
+
+        /* Close Button */
+        .close-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            color: #080808;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Title Styles */
+        .project-title {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            font-style: italic;
+        }
+
+        .project-title::after {
+            content: "";
+            display: block;
+            width: 80%;
+            height: 1.5px;
+            background-color: #007bff;
+            margin: 0.5rem auto;
+        }
+
+        /* Content Section */
+        .content-section {
+            width: 90%;
+            max-width: 1200px;
+            text-align: justify;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 1rem auto 2rem;
+        }
+
+        /* Dashboard Section */
+        .dashboard-container {
+            width: 95%; /* Increased width */
+            max-width: 1200px; /* Larger max width */
+            aspect-ratio: 16 / 9; /* Proportional height */
+            margin-bottom: 2rem;
+        }
+
+        
+        .dashboard-subtitle {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 1rem 0 0.5rem 5%; /* Left-align the subtitle */
+        color: #333;
+        width: 100%; /* Ensure subtitle stretches to the full width */
+        text-align: left; /* Ensure the text aligns to the left */
+        margin-left: 10%;
+        font-style: italic;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Close Button -->
+    <button class="close-button" onclick="window.history.back()">×</button>
+
+    <!-- Project Title -->
+    <h1 class="project-title">
+        Credit Card Financial Dashboard
+        <img src="assets/img/Power Bi.png"  alt="Power BI Icon" style="width: 30px; height: 30px; vertical-align: middle; margin-left: 10px;">
+     </h1>
+
+    <!-- Project Description -->
+    <div class="content-section">
+      <ul>
+  <li>Developed a comprehensive <b>Credit Card Financial Dashboard</b> using Power BI, offering deep insights into customer spending behavior, revenue trends, and transaction patterns across demographics and card categories.</li>
+  
+  <li><b>Customer Report:</b> Visualized and analyzed revenue segmented by education level, income group, marital status, and number of dependents, uncovering spending patterns and enabling data-driven marketing strategies.</li>
+  
+  <li>Identified top-performing regions by analyzing data from the top 5 states, providing insights into geographic trends in credit card usage and revenue generation.</li>
+  
+  <li>Created an age-group analysis dashboard to highlight variations in revenue and spending behavior among different customer age segments.</li>
+  
+  <li><b>Card Transaction Report:</b> Calculated revenue and transaction volumes by card category (Blue, Gold, Platinum, Silver), education level, and expenditure type (Bills, Entertainment, Food, Fuel, Grocery, Travel) to reveal customer preferences and spending habits.</li>
+  
+  <li>Analyzed chip adoption trends by tracking revenue and transaction data for users with and without chip-enabled cards, uncovering the benefits and business implications of chip usage.</li>
+  
+  <li>Visualized transaction volume by quantity to identify high-value transactions, enabling businesses to optimize offerings and identify areas for growth or improvement.</li>
+  
+  <li>Utilized Power BI for data integration, transformation, and interactive dashboards. Applied DAX for advanced metrics and actionable insights into customer and transaction data.</li>
+</ul>
+
+    </div>
+    <h2 class="dashboard-subtitle">Live Dashboard</h2>
+    <!-- Power BI Dashboard Embed -->
+    <div class="dashboard-container">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYTBkYTFkNTMtNDIyZS00OWQyLWFkNWEtZDdjM2ZmZjEyY2E0IiwidCI6IjI3OGFlZjdlLTVhMDItNDJiZS1iNmFhLTgwMDlmMDIyMWQzZCJ9" title="Power BI Dashboard"></iframe>
+    </div>
+</body>
+</html>

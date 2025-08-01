@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Mohith's Portfolio </title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+           <!-- Logo in header -->
+<a href="#" class="nav__logo" onclick="openPopup()">
+ <img src="Assets/img/mohith.jpg" alt="Mohith S Naik" class="nav-logo-img" />
+
+  <span class="nav__text">Mohith S Naik</span>
+</a>
+
+<!-- Popup Modal -->
+<div id="popupModal" class="popup">
+  <span class="close" onclick="closePopup()">&times;</span>
+  <img class="popup-content" id="popupImage" src="Assets/img/mohith.jpg" alt="Profile Large">
+</div>
+
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <!-- <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li> -->
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Certificates</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Mohith S Naik</span><br> Data Science | Analyst </h1>
+                    <a download href="assets/mohith_naik_resume.pdf" class="button button-flex">Download Resume </a><br>
+
+                    <a href="https://www.linkedin.com/in/mohith-naik-b84969345/?trk=opento_sprofile_details" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i>
+                    </a>
+
+                    <a href="https://github.com/Mohithsnaik" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i>
+                    </a>
+
+                </div>
+            </section>
+           
+            
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills__container bd-grid">
+                    <div class="skills-content">
+                        <!-- First Line -->
+                        <div class="skills-row">
+                            <div class="skills-name">POWER BI</div>
+                            <div class="skills-name">PYTHON</div>
+                            <div class="skills-name">SQL</div>
+                            <div class="skills-name">EXCEL</div>
+                        </div>
+                        <!-- Second Line -->
+                        <div class="skills-row">
+                            <div class="skills-name">COMMUNICATION</div>
+                            <div class="skills-name">PRESENTATION</div>
+                            <div class="skills-name">PROBLEM-SOLVING</div>
+                            <div class="skills-name">ANALYTICAL THINKING</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          
+<!--===== EDUCATION =====-->
+<section class="about section" id="education">
+                <h2 class="section-title">Education</h2>
+                <div>
+                    <h3 class="about__subtitle">Qualification</h3>
+                </div>
+            
+                <div class="timeline-container">
+    <!-- Degree -->
+    <div class="timeline-item left">
+      <div class="timeline-arrow"></div>
+      <div class="timeline-content">
+        <h3>B.E. in Information Science and Engineering</h3>
+        <p>NMAMIT, Nitte</p>
+        <span class="timeline-date">2022 – 2025</span>
+        <span class="timeline-details">Graduated with First Class with Distinction</span>
+      </div>
+    </div>
+
+    <!-- PUC -->
+    <div class="timeline-item right">
+      <div class="timeline-arrow"></div>
+      <div class="timeline-content">
+        <h3>Diploma in Mechanical Engineering</h3>
+        <p>Dr. T M A Pai Polytechnic, Manipal</p>
+        <span class="timeline-date">2019 – 2022</span>
+        <span class="timeline-details">First Class</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+             <!--===== PROJECTS =====-->
+            <section class="projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects__container bd-grid">
+            <!-- Project Box 1 -->
+            <div class="project-box">
+               <img src="assets/img/credit card.png" alt="Project 1 Image" class="project-img">
+               <h4 class="project-title">Credit card Financial dashboard</h4>
+               <div class="project-content">
+                <a href="project1.html"  class="project-button">View Project</a>   
+                   <div class="project-icon">
+                      <img src="assets/img/Power Bi.png" alt="Power BI Icon">
+                   </div>
+                </div>
+           </div>
+
+        <!-- Project Box 2 -->
+        <div class="project-box">
+            <img src="assets/img/pizza sales.png" alt="Project 2 Image" class="project-img">
+            <h4 class="project-title">Pizza Sales Dashboard Analysis</h4>
+            <div class="project-content">
+                <a href="project2.html"  class="project-button">View Project</a>
+                <div class="project-icon">
+                    <img src="assets/img/Power Bi.png" alt="Power BI Icon">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Box 3 -->
+        <div class="project-box">
+            <img src="assets/img/bank.png" alt="Project 3 Image" class="project-img">
+            <h4 class="project-title">Bank Customer Churn Analysis </h4>
+            <div class="project-content">
+                <a href="project3.html"  class="project-button">View Project</a>
+                <div class="project-icon">
+                    <img src="assets/img/Power Bi.png" alt="Power BI Icon">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Box 4 -->
+        <div class="project-box">
+            <img src="assets/img/musicstore.jpeg" alt="Project 4 Image" class="project-img">
+            <h4 class="project-title">Music Store Analysis</h4>
+            <div class="project-content">
+                <a href="project4.html"  class="project-button">View Project</a>
+                <div class="project-icon">
+                    <img src="assets/img/sql.jpg" alt="Power BI Icon">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+            <!--=====Certificates=====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Certificates</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/python.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/deloitee data analyst certificate_page-0001.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/tata visualisation certificate_page-0001.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/Mohith S Naik_page-0001.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/excel_page-0001.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+            
+                <!-- Phone and Email -->
+                <div class="contact__info-container">
+                        <div class="contact__info">
+                            <img src="assets/img/telephone.png" alt="Phone" class="contact__icon" />
+                            <a href="Tel:+919743804353" class="contact__text">+91 9743804353</a>
+                        </div>
+
+                        <div class="contact__info">   
+                            <img src="assets/img/communication.png" alt="Email" class="contact__icon" />
+                            <a href="Mailto:mohithnaik844@gmail.com" class="contact__text">mohithnaik844@gmail.com</a><br>
+                        </div>
+
+                        <div class="contact__info">
+                            <img src="assets/img/gps.png" alt="Location" class="contact__icon" />
+                            <span class="contact__text">Udupi Karnataka India</span>
+                        </div>
+                </div>
+             </section>
+            
+            
+
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+           
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/mohith-naik-b84969345/?trk=opento_sprofile_details" target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/Mohithsnaik" target="_blank" class="footer__icon"><i class='bx bxl-github' ></i></a>
+               
+            </div>
+            <p class="footer__copy">copyright © 2025 Mohith S Naik</p>
+        </footer>
+
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+
+
+<script>
+  function openPopup() {
+    document.getElementById("popupModal").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("popupModal").style.display = "none";
+  }
+
+  // Optional: Close popup when clicking outside the image
+  window.onclick = function(event) {
+    const modal = document.getElementById("popupModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
+
+        
+    </body>
+</html>

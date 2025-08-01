@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store Analysis</title>
+    <style>
+        /* Reset Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #f8f8f8;
+            height: 100vh;
+        }
+
+        /* Close Button */
+        .close-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            color: #080808;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Title Styles */
+        .project-title {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            font-style: italic;
+        }
+
+        .project-title::after {
+            content: "";
+            display: block;
+            width: 80%;
+            height: 1.5px;
+            background-color: #007bff;
+            margin: 0.5rem auto;
+        }
+
+        /* Content Section */
+        .content-section {
+            width: 90%;
+            max-width: 1200px;
+            text-align: justify;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 1rem auto 2rem;
+        }
+      /* GitHub Button */
+      .github-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-left: 40%;
+        }
+
+        .github-button:hover {
+            color: #080808;
+            transform: translateY(-5px); /* Moves the button up */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+        }
+    </style>
+</head>
+<body>
+    <!-- Close Button -->
+    <button class="close-button" onclick="window.history.back()">×</button>
+
+    <!-- Project Title -->
+    <h1 class="project-title">Music Store Analysis
+        <img src="assets/img/sql.jpg"  alt="Power BI Icon" style="width: 30px; height: 30px; vertical-align: middle; margin-left: 10px;">
+     </h1>
+
+    <!-- Project Description -->
+    <div class="content-section">
+     <ul>
+  <li>Developed a comprehensive <b>SQL Music Store Analysis</b> project using PostgreSQL and PgAdmin to explore sales trends, customer preferences, and artist performance within a digital music platform.</li>
+
+  <li><b>Leadership & Team Structure:</b> Identified the most senior employee in the company using ranking functions, providing insights into the organization's hierarchy.</li>
+
+  <li><b>Market & Revenue Analysis:</b> Determined the United States as the top-performing country by invoice volume, and Prague as the highest revenue-generating city—ideal for promotional focus.</li>
+
+  <li><b>Customer Insights:</b> Ranked top-spending customers globally and by country. Revealed a high-value customer base concentrated in Prague, guiding loyalty campaign strategies.</li>
+
+  <li><b>Genre & Listener Segmentation:</b> Discovered Rock as the most popular genre. Extracted listener details by genre and region to enable targeted outreach and tailored marketing.</li>
+
+  <li><b>Artist Performance:</b> Analyzed top-performing artists in the Rock genre by total track count, revealing highly engaged contributors to the platform's content catalog.</li>
+
+  <li><b>Track Duration Analysis:</b> Identified songs exceeding the average length, offering opportunities for niche promotion in genres like instrumental or classical music.</li>
+
+  <li><b>Spending Patterns by Region:</b> Used advanced SQL queries (with CTEs and window functions) to find the top-spending customers per country, informing regional sales and engagement strategies.</li>
+
+  <li>Utilized complex SQL concepts such as <b>JOINs, subqueries, window functions, aggregations, and CTEs</b> to drive end-to-end business intelligence reporting and support strategic decisions.</li>
+
+  <li><b>Business Recommendations:</b>
+    <ul>
+      <li>Host a high-profile music event in Prague, given its leadership in revenue and customer value.</li>
+      <li>Launch direct marketing campaigns targeting Rock genre listeners using their contact data.</li>
+      <li>Tailor music offerings and promotions based on country-specific genre preferences.</li>
+      <li>Offer premium memberships or loyalty perks to top customers in each region.</li>
+      <li>Promote long-duration tracks through specialized channels (e.g., classical, ambient playlists).</li>
+    </ul>
+  </li>
+</ul>
+
+        <a href="https://github.com/Mohithsnaik/SQL_Music_Store_Analysis/tree/main" target="_blank">
+            <button class="github-button">View Project on GitHub</button>
+        </a>
+        <div style="margin-bottom: 40px;"></div>
+    </div>
+    
+</body>
+</html>

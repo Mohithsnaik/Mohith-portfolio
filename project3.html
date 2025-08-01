@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Customer Churn Analysis</title>
+    <style>
+        /* Reset Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #f8f8f8;
+            height: 100vh;
+        }
+
+        /* Close Button */
+        .close-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            color: #080808;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Title Styles */
+        .project-title {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            font-style: italic;
+        }
+
+        .project-title::after {
+            content: "";
+            display: block;
+            width: 80%;
+            height: 1.5px;
+            background-color: #007bff;
+            margin: 0.5rem auto;
+        }
+
+        /* Content Section */
+        .content-section {
+            width: 90%;
+            max-width: 1200px;
+            text-align: justify;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 1rem auto 2rem;
+        }
+
+        /* Dashboard Section */
+        .dashboard-container {
+            width: 95%; /* Increased width */
+            max-width: 1200px; /* Larger max width */
+            aspect-ratio: 16 / 9; /* Proportional height */
+            margin-bottom: 2rem;
+        }
+        .dashboard-subtitle {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 1rem 0 0.5rem 5%; /* Left-align the subtitle */
+        color: #333;
+        width: 100%; /* Ensure subtitle stretches to the full width */
+        text-align: left; /* Ensure the text aligns to the left */
+        margin-left: 10%;
+        font-style: italic;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Close Button -->
+    <button class="close-button" onclick="window.history.back()">×</button>
+
+    <!-- Project Title -->
+    <h1 class="project-title">Bank Customer Churn Analysis
+        <img src="assets/img/Power Bi.png"  alt="Power BI Icon" style="width: 30px; height: 30px; vertical-align: middle; margin-left: 10px;">
+    </h1>
+
+    <!-- Project Description -->
+    <div class="content-section">
+        <ul>
+  <li>Designed a comprehensive <b>Bank Churn Analysis Dashboard</b> using Power BI to monitor customer retention, analyze churn patterns, and support strategic decision-making.</li>
+
+  <li><b>Customer Overview:</b> Displayed key KPIs using card and gauge visuals to highlight overall churn rate, active customer count, and benchmark thresholds for stakeholder visibility.</li>
+
+  <li><b>Demographic Segmentation:</b> Implemented donut charts to segment churn distribution across gender, geography, tenure, and customer categories, uncovering at-risk groups for targeted retention efforts.</li>
+
+  <li><b>Behavioral Analysis:</b> Leveraged line and column combo charts to track churn trends over time and correlate them with product usage or service subscriptions, identifying behavior-based churn triggers.</li>
+
+  <li><b>Interactive Filtering:</b> Enabled dynamic analysis through slicers for product type, geography, and customer tenure, empowering business users to explore trends with ease.</li>
+
+  <li><b>Churn Drivers:</b> Integrated visual comparisons and distribution charts to explore potential drivers of churn such as low engagement, limited product holdings, or service dissatisfaction.</li>
+
+  <li>Applied advanced <b>DAX</b> calculations to compute churn rate, retention ratio, and customer tenure metrics, enabling deeper analytical insights and predictive indicators.</li>
+
+  <li>Designed a user-friendly, visually intuitive dashboard layout with layered elements and clear hierarchy to ensure accessibility and stakeholder adoption.</li>
+</ul>
+
+       
+    </div>
+    <h2 class="dashboard-subtitle">Live Dashboard</h2>
+    <!-- Power BI Dashboard Embed -->
+    
+    <div class="dashboard-container">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiN2MwYTNiNDMtY2U1ZC00OWQ5LWI1NzYtMGMxYjgzZTRlNTY0IiwidCI6IjI3OGFlZjdlLTVhMDItNDJiZS1iNmFhLTgwMDlmMDIyMWQzZCJ9" title="Power BI Dashboard"></iframe>
+    </div>
+</body>
+</html>
+
+

@@ -255,6 +255,26 @@ img {
 
 
 
+
+
+
+
+@media screen and (max-width: 768px) {
+  .home {
+    height: auto !important;
+    min-height: 90vh;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
 /*===== HOME =====*/
 .home {
    display: flex;

@@ -1054,3 +1054,14 @@ img {
     margin-top: 0.1rem !important;
   }
 }
+
+
+
+
+
+/* Mobile font size reduction only */
+@media screen and (max-width: 768px) {
+  .home__title {
+    font-size: 1.4rem !important;
+  }
+}

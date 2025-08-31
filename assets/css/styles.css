@@ -964,14 +964,17 @@ img {
 
 
 
-/* Mobile override */
-@media screen and (max-width: 992px) {   /* covers tablets + mobiles */
+/* Mobile fix */
+@media screen and (max-width: 992px) {
   .home {
-    height: auto !important;
-    min-height: 85vh !important;
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+    height: auto !important;          /* cancel fixed 100vh */
+    min-height: 70vh !important;      /* shorter section */
+    padding-top: 2rem !important;     /* less top padding */
+    padding-bottom: 1rem !important;  /* less bottom padding */
+    justify-content: center !important; /* keep content vertically centered */
   }
+}
+
 
   .home__title {
     font-size: 1.6rem !important;

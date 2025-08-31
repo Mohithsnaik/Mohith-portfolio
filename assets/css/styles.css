@@ -263,7 +263,7 @@ img {
   align-items: center; /* Center content horizontally */
   justify-content: center; /* Center content vertically */
   text-align: center; /* Center-align the text */
-  /* height: 100vh;  Full viewport height */
+   height: 100vh;  /* Full viewport height */
   background-color: white /* Optional: Set a background color */
  /* position: relative;
   row-gap: 5rem;
@@ -964,122 +964,25 @@ img {
 
 
 
-
-
-
-
-/* ===== MOBILE RESPONSIVE FIXES ===== */
-
-/* Fix for home section white space on mobile */
-@media screen and (max-width: 768px) {
+/* Mobile override */
+@media screen and (max-width: 992px) {   /* covers tablets + mobiles */
   .home {
-    height: auto !important; /* Remove fixed height on mobile */
-    min-height: 85vh !important; /* Minimum height but allows content to dictate */
-    padding: 1rem 1rem 1rem 1rem !important; /* Reduce top/bottom padding */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .home__data {
-    width: 100%;
-    max-width: 90%;
-  }
-  
-  .home__title {
-    font-size: 1.8rem !important; /* Slightly smaller on mobile */
-    margin-bottom: 1.5rem !important; /* Reduce margin */
-    line-height: 1.3;
-  }
-  
-  .home__social {
-    margin-top: 1rem;
-    gap: 15px;
-    justify-content: center;
-  }
-  
-  .home__social-icon {
-    font-size: 1.3rem;
-    margin-left: 0;
-  }
-  
-  .button {
-    margin-bottom: 1.5rem !important; /* Reduce bottom margin */
-    padding: 0.6rem 2rem;
-    font-size: 0.9rem;
-  }
-}
-
-/* Additional mobile optimizations for other sections */
-@media screen and (max-width: 768px) {
-  .section {
-    padding-top: 2rem !important;
+    height: auto !important;
+    min-height: 85vh !important;
+    padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
   }
-  
-  .section-title {
-    margin-bottom: 2rem !important;
-    font-size: 1.4rem;
-  }
-  
-  .bd-grid {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  
-  /* Skills section mobile fix */
-  .skills {
-    padding: 2rem 0 !important;
-  }
-  
-  .skills__container {
-    margin-top: 1rem !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* Projects section mobile spacing */
-  .projects__container {
-    gap: 15px !important;
-  }
-  
-  .project-box {
-    margin-bottom: 1rem;
-  }
-  
-  /* Contact section mobile spacing */
-  .contact {
-    padding: 2rem 0 !important;
-  }
-  
-  .contact__info-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .contact__info {
-    margin-bottom: 0.5rem !important;
-  }
-}
 
-/* Extra small devices optimization */
-@media screen and (max-width: 480px) {
-  .home {
-    min-height: 50vh !important;
-    padding: 3rem 0.5rem 1.5rem 0.5rem !important;
-  }
-  
   .home__title {
-    font-size: 1.5rem !important;
+    font-size: 1.6rem !important;
     margin-bottom: 1rem !important;
+    line-height: 1.3;
   }
-  
+
   .button {
     margin-bottom: 1rem !important;
-    padding: 0.5rem 1.5rem;
-    font-size: 0.8rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
   }
 }
 

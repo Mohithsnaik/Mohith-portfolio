@@ -974,7 +974,7 @@ img {
   .home {
     height: auto !important;
     min-height: 0 !important; /* Remove all minimum height */
-    padding: 3rem 1rem 0.5rem 1rem !important; /* Minimal padding */
+    padding: 3rem 1rem 2rem 1rem !important; /* Minimal padding */
     margin: 0 !important;
     display: flex !important;
     flex-direction: column !important;

@@ -964,16 +964,17 @@ img {
 
 
 
-/* Mobile fix */
-@media screen and (max-width: 992px) {
+/* Mobile override - phones only */
+@media screen and (max-width: 768px) {
   .home {
-    height: auto !important;          /* cancel fixed 100vh */
-    min-height: 70vh !important;      /* shorter section */
-    padding-top: 2rem !important;     /* less top padding */
-    padding-bottom: 1rem !important;  /* less bottom padding */
-    justify-content: center !important; /* keep content vertically centered */
+    height: auto !important;
+    min-height: 70vh !important;
+    padding-top: 2rem !important;
+    padding-bottom: 1rem !important;
+    justify-content: center !important;
   }
 }
+
 
 
   .home__title {

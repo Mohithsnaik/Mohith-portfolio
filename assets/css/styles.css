@@ -975,7 +975,7 @@ img {
   .home {
     height: auto !important; /* Remove fixed height on mobile */
     min-height: 85vh !important; /* Minimum height but allows content to dictate */
-    padding: 2rem 1rem 2rem 1rem !important; /* Reduce top/bottom padding */
+    padding: 1rem 1rem 1rem 1rem !important; /* Reduce top/bottom padding */
     display: flex;
     flex-direction: column;
     align-items: center;
